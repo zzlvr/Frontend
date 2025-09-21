@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" type="image/jpeg" href="223.jpg">
         <title>
 My First Webpage
         </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            p {font-size: 50px;}
+        </style>
     </head>
     <body>
 <!-- Headings: name, course -->
-<h1>Arsen</h1>
+ <div class="header">
+<h1 id="main-heading">Arsen</h1>
 <h2>2 course Computer Science</h2>
 <!-- About me section -->
-<h3>About me</h3>
-<p>Im a student. I like playing video games and sports</p>
+<h3 class="chocolate">About me</h3>
+<p style="color: blue;">Im a student. I like playing video games and sports</p>
+</div>
 <!-- Hobbies list -->
-<h3>My hobbies</h3>
+ <div class="main">
+<h3 class="highlight">My hobbies</h3>
+<div class="ol">
 <ol>
     <li>Sports</li>
     <li>Video games</li>
 </ol>
+</div>
 <!-- Favorite websites -->
-<h3>My favorite websites</h3>
+<h3 class="chocolate">My favorite websites</h3>
 <ul> 
     <li><a href ="https://www.google.com">Google</a></li>
     <li><a href ="https://lms.astanait.edu.kz/">Astana it University</a></li>
 </ul>
 <!-- Photo -->
-<h3>My photo</h3>
-<img src="damn.jpg" width="250" height="250">
+<h3 class="highlight">My photo</h3>
+<img src="damn.jpg" alt="cat" width="250" height="250">
 <!-- Button -->
-<h3>Button</h3>
+<h3 class="highlight">Button</h3>
 <button>Click Me</button>
 <!-- Class schedule table -->
-<h3>Table</h3>
+<h3 id="first-table">Table</h3>
 <table border="1" width="200">
     <caption>Class Schedule</caption>
     <tr>
@@ -55,8 +65,10 @@ My First Webpage
         <td style="padding:15px">14:00</td>
     </tr>
 </table>
+</div>
 <!-- Optional Challenge: another table -->
-<h3>Optional Challenge</h3>
+ <div class="footer">
+<h3 id="second-table">Optional Challenge</h3>
 <table border="1" width="500">
     <caption>Another table</caption>
     <tr>
@@ -71,10 +83,10 @@ My First Webpage
     </tr>
 </table>
 <!-- Emojis -->
-<h3>My mood</h3>
+<h3 class="highlight">My mood</h3>
 <p>Im happy &#128512;&#128515;&#128516;</p>
 <!-- Form -->
-<h3>Forms</h3>
+<h3 class="highlight">Forms</h3>
 <form>
     <label>Name:</label>
     <input type="text" placeholder="Write your name"><br><br>
@@ -84,5 +96,6 @@ My First Webpage
     <input type="color"><br><br>
     <button type="submit">Submit</button>
 </form>
+</div>
     </body>
 </html>
